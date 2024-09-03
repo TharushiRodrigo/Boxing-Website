@@ -1,0 +1,109 @@
+h1 {
+    text-align: center;
+    font-family: system-ui;
+}
+
+img {
+    max-width: 100%;
+}
+
+.c1 {
+    padding: 20px 0px;
+}
+
+figure {
+    position: relative;
+    right: 15%;
+    max-width: 800px;
+    margin: 0 auto 75px;
+    border: 0px solid #000;
+    padding-bottom: 0px;
+}
+
+figure img {
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.thumbnail_list {
+    padding: 20px;
+}
+
+.thumbnail_list img {
+    border-width: 5px;
+    border-color: #4D77FF;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.thumbnail_list img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(20px 10px 10px darkred);
+}
+
+#intro {
+    font-family: system-ui;
+    text-align: center;
+    padding-right: 50px;
+    line-height: 40px;
+
+}
+
+section {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    margin: -10px;
+    padding-top: 10px;
+
+}
+
+.background .buttons {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.background .buttons .btn {
+    padding: 0 10px;
+    display: inline-flex;
+    background: #dee0e3;
+    color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.background .buttons .btn.active {
+   background: #444;
+}
+
+.background .buttons .btn:nth-child(2) {
+    font-size: 1.5em;
+}
+
+.background .buttons .btn:nth-child(3) {
+    font-size: 2em;
+}
+
+.background.colour {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
