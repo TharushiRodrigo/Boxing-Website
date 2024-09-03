@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:0;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+
+
+}
+html{
+    font-size:10px;
+}
+body{
+    font-size:1.6rem;
+    font-family:'Archivo',sans-serif;
+    background-color: #151515;
+    color:#fff;
+
+
+}
+ul{
+    list-style: none;
+
+}
+
+img{
+    width:100%;
+    display:block;
+}
+.container{
+    max-width:1440px;
+    margin:0 auto;
+    padding: 0 2rem;
+}
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    background-color: #151515;
+    color:#fff;
+    text-align:center;
+    padding:15px 200px;
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    z-index: 999;
+
+
+}
+
+.navbar .container{
+    justify-content: space-between;
+}
+.navbar-brand{
+    font-weight:700;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size:2rem;
+    color:#fff;
+}
+.navbar-brand span{
+    color :#e74c3c;
+    margin-right:30px;
+}
+
+.navbar-toggler-open,.navbar-toggler-close{
+    font-size:2.8rem;
+    background-color: transparent;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease-in-out;
+}
+.navbar-toggler-open:hover,.navbar-toggler-close:hover{
+    opacity:0.8;
+}
+.navbar-collapse{
+    position: fixed;
+    right:-345px;
+    top:0;
+    width:345px;
+    background-color: #272727;
+    height:100%;
+    padding:2rem 2rem 2rem 3rem;
+    z-index:999;
+    transition:all 0.3s ease-in-out;
+}
+.navbar-toggler-close{
+    position:absolute;
+    right:2rem;
+    top:2rem;
+}
+.navbar-nav{
+    margin-top:5rem;
+
+}
+.nav-item{
+    margin:2.4rem 0;
+    text-align:left;
+
+
+}
+.nav-link{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: 2px;
+
+    font-size:1em;
+    transition:all 0.3s ease-in-out;
+    margin-right:20px;
+
+
+
+}
+.nav-link:last-of-type {
+    margin-right: 0;
+}
+.nav-link:hover{
+    color:#dc143c;
+}
+
+.nav-link.active {
+    border-bottom:2px solid red;
+}
+
+
+.show-navbar{
+    right:0;
+}
+
+.resize-animation-stopper *{
+    animation: none !important;
+    transition: none !important;
+}
+@media(min-width:992px){
+    .navbar-toggler-close, .navbar-toggler-open{
+        display: none;
+    }
+    .navbar-collapse{
+        width:100%;
+        right:0;
+        position:relative;
+        background-color:transparent;
+        padding:0;
+
+    }
+    .navbar-nav{
+        margin-top:0;
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+
+    }
+    .nav-item{
+        position:relative;
+        margin:0 2.4rem 0 0;
+
+    }
+    .nav-link:hover{
+        color:#e74c3c;
+        opacity:0.8;
+    }
+
+}
